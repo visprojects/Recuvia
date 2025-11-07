@@ -42,7 +42,7 @@ interface AuthContextType {
 
 export default function MainPage() {
   // --- NEW: Similarity threshold and max results states ---
-  const [similarityThreshold, setSimilarityThreshold] = useState<number>(0.3);
+  const [similarityThreshold, setSimilarityThreshold] = useState<number>(0.1);
   const [maxResults, setMaxResults] = useState<string>('20'); // string to allow 'all' and 'custom'
   const [customMaxResults, setCustomMaxResults] = useState<string>('');
 

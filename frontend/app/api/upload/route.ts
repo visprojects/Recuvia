@@ -71,10 +71,11 @@ export async function POST(req: NextRequest) {
     let itemId = "";
     let imageUrl = "";
 
+    const supabase = createRouteHandlerClient({ cookies })
     // **** CREATE REQUEST-SCOPED CLIENT ****
-    const cookieStore = cookies();
+    //const cookieStore = cookies();
     // This 'supabase' client holds the user context for THIS request
-    const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
+    //const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
 
     try {
         const startTime = Date.now();

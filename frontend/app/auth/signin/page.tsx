@@ -41,6 +41,8 @@ export default function SignIn() {
     } finally {
       setLoading(false);
     }
+
+    router.replace('/');
   };
 
   const handleGoogleSignIn = async () => {
